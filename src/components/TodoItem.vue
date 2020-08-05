@@ -18,7 +18,3 @@ export default {
     props: ["todo"]
 }
 </script>
-
-<style scoped>
-
-</style>
