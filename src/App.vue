@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1 class="mx-auto text-primary" style="padding-bottom: 50px;"><b>Todo</b></h1>
+    <h1 class="mx-auto text-light" style="padding-bottom: 50px;"><b>Todo</b></h1>
       <Todos v-bind:todos="todos"/>
   </div>
 </template>
@@ -36,5 +36,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: #2c3e50;
+}
+html{
+  background-color: #2c3e50;
 }
 </style>

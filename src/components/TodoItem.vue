@@ -2,7 +2,7 @@
     <div>
         <b-card bg-variant="light" text-variant="dark" :title="todo.title">
             <b-card-text class="text-secondary">
-                For the user {{ todo.userId }}
+                For user {{ todo.userId }}
             </b-card-text>
             <b-card-text>
                 <b class="text-success" v-if="todo.completed == true">Completed</b>
