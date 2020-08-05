@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h1 class="mx-auto text-primary" style="padding-bottom: 50px;"><b>Todo</b></h1>
       <Todos v-bind:todos="todos"/>
   </div>
 </template>
