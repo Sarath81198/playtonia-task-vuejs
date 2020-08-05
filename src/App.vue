@@ -12,30 +12,18 @@ export default {
   components: {
     Todos
   },
+
   data() {
     return {
-      todos: [
-        {
-    "userId": 1,
-    "id": 1,
-    "title": "delectus aut autem",
-    "completed": false
-  },
-  {
-    "userId": 1,
-    "id": 2,
-    "title": "quis ut nam facilis et officia qui",
-    "completed": false
-  },
-  {
-    "userId": 1,
-    "id": 3,
-    "title": "fugiat veniam minus",
-    "completed": false
-  },
-      ]
+      todos: null
     }
-  }
+  },
+   async created(){
+      const res = await fetch('https://jsonplaceholder.typicode.com/todos/');
+      const data = await res.json();
+      console.log(data)
+      this.todos = data;
+  },
 }
 </script>
 
